@@ -1,5 +1,4 @@
-# learning-python
-"learn python"
+# learning-python 目录
 
 - learning_assert
 > python 断言
