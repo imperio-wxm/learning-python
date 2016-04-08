@@ -24,6 +24,6 @@
 
 - python 字符串
 
-> learning_datatime
+> learning_datetime
 
 - python 时间、日期操作
