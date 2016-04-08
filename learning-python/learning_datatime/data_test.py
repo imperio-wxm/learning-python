@@ -25,3 +25,34 @@ print date.today()
 # 根据给定的时间戮,返回一个date对象
 timesstamp = 1451577600
 print date.fromtimestamp(timesstamp)
+
+# 生成一个新的日期对象
+replace_date = now_time.replace(year=1990)
+print replace_date
+
+# 返回日期对应的time.struct_time对象
+print now_time.timetuple()
+
+# 返回weekday,如果是星期一,返回0,如果是星期2,返回1,以此类推.
+print now_time.weekday()
+
+# 返回格式如(year,month,day)的元组
+print now_time.isocalendar()
+
+# 返回格式如'%Y-%m-%d'的字符串
+print now_time.isoformat()
+
+# 自定义格式化字符串
+fmt = "%Y-%m-%d %H:%M:%S"
+print now_time.strftime(fmt)
+
+# 两个日期运算
+date_1 = date(1992, 1, 20)
+date_2 = date(2000, 5, 3)
+print "date_2 - date_1 = {0}".format(date_2 - date_1)
+
+# 比较日期时返回True or False
+if date_1 > date_2:
+	print "date_1 > date_2"
+else:
+	print "date_1 < date_2"
