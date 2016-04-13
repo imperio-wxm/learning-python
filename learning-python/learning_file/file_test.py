@@ -35,3 +35,19 @@ file_writelines = open(file_path, 'a+')
 file_writelines.writelines(str_list)
 file_writelines.close()
 """
+
+# offset偏移
+offset_path = os.path.abspath('../doc/offset_test.txt')
+file_offset = open(offset_path, 'w')
+file_offset.write("abcdefg")
+file_offset.seek(2)
+file_offset.write('12346')
+file_offset.close()
+file_offset = open(offset_path)
+print file_offset.read()
+
+# tell返回当前文件位置
+file_tell = open(offset_path, 'w')
+file_tell.seek(3)
+print file_tell.tell()
+
