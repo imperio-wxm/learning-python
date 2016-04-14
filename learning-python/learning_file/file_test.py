@@ -22,6 +22,7 @@ file_wtite.close()
 # 读一行数据
 file_readline = open(file_path, 'r+')
 print file_readline.readline().decode("utf-8")
+
 # 读指定行数
 lines = file_readline.readlines(2)
 for line in lines:
